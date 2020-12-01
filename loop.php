@@ -30,3 +30,7 @@ increment counter: Increases the loop counter value
 } */
 
 echo "<b>For Loop</b><br>";
+
+for ($x = 0; $x <= 10; $x++) {
+  echo "The number is: $x <br>";
+}
