@@ -12,4 +12,13 @@ function testOne() {
     }
 }
 
-testOne();
+testOne(); "<br>";
+
+function familyNmae($familyName){
+  echo "$familyName valo na <br>";
+}
+
+familyNmae("Tui");
+familyNmae("Ami");
+familyNmae("Tomra");
+familyNmae("Apnara");
