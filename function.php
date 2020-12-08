@@ -22,3 +22,12 @@ familyNmae("Tui");
 familyNmae("Ami");
 familyNmae("Tomra");
 familyNmae("Apnara");
+
+function doubleVar($familyName, $bday){
+  echo "$familyName valo na $bday <br>";
+}
+
+doubleVar("Tui" , 1952);
+doubleVar("Ami" , 2010);
+doubleVar("Tomra" , 2013);
+doubleVar("Apnara" , 2014);
