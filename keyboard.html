@@ -1,72 +1,75 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keybaord</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <div class="container">
+        <textarea class="textField" cols="134" rows="6" type="text"></textarea>
         <div class="row one">
-            <button>`</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button>-</button>
-            <button>=</button>
+            <button onclick="typeWritter('`')">`</button>
+            <button onclick="typeWritter('1')">1</button>
+            <button onclick="typeWritter('2')">2</button>
+            <button onclick="typeWritter('3')">3</button>
+            <button onclick="typeWritter('4')">4</button>
+            <button onclick="typeWritter('5')">5</button>
+            <button onclick="typeWritter('6')">6</button>
+            <button onclick="typeWritter('7')">7</button>
+            <button onclick="typeWritter('8')">8</button>
+            <button onclick="typeWritter('9')">9</button>
+            <button onclick="typeWritter('0')">0</button>
+            <button onclick="typeWritter('-')">-</button>
+            <button onclick="typeWritter('=')">=</button>
             <button class="backspace">Backspace</button>
         </div>
         <div class="row two">
             <button class="tab">Tab</button>
-            <button>Q</button>
-            <button>W</button>
-            <button>E</button>
-            <button>R</button>
-            <button>T</button>
-            <button>Y</button>
-            <button>U</button>
-            <button>I</button>
-            <button>O</button>
-            <button>P</button>
-            <button>[</button>
-            <button>]</button>
+            <button onclick="typeWritter('Q')">Q</button>
+            <button onclick="typeWritter('W')">W</button>
+            <button onclick="typeWritter('E')">E</button>
+            <button onclick="typeWritter('R')">R</button>
+            <button onclick="typeWritter('T')">T</button>
+            <button onclick="typeWritter('Y')">Y</button>
+            <button onclick="typeWritter('U')">U</button>
+            <button onclick="typeWritter('I')">I</button>
+            <button onclick="typeWritter('O')">O</button>
+            <button onclick="typeWritter('P')">P</button>
+            <button onclick="typeWritter('[')">[</button>
+            <button onclick="typeWritter(']')">]</button>
             <button class="slace">\</button>
         </div>
         <div class="row three">
             <button class="caps">Caps</button>
-            <button>A</button>
-            <button>S</button>
-            <button>D</button>
-            <button>F</button>
-            <button>G</button>
-            <button>H</button>
-            <button>J</button>
-            <button>K</button>
-            <button>L</button>
-            <button>;</button>
-            <button>'</button>
+            <button onclick="typeWritter('A')">A</button>
+            <button onclick="typeWritter('S')">S</button>
+            <button onclick="typeWritter('D')">D</button>
+            <button onclick="typeWritter('F')">F</button>
+            <button onclick="typeWritter('G')">G</button>
+            <button onclick="typeWritter('H')">H</button>
+            <button onclick="typeWritter('J')">J</button>
+            <button onclick="typeWritter('K')">K</button>
+            <button onclick="typeWritter('L')">L</button>
+            <button onclick="typeWritter(';')">;</button>
+            <button onclick="typeWritter('')">'</button>
             <button class="enter">Enter</button>
         </div>
         <div class="row four">
             <button class="shift">Shift</button>
-            <button>Z</button>
-            <button>X</button>
-            <button>C</button>
-            <button>V</button>
-            <button>B</button>
-            <button>N</button>
-            <button>M</button>
-            <button>,</button>
-            <button>.</button>
-            <button>/</button>
+            <button onclick="typeWritter('Z')">Z</button>
+            <button onclick="typeWritter('X')">X</button>
+            <button onclick="typeWritter('C')">C</button>
+            <button onclick="typeWritter('V')">V</button>
+            <button onclick="typeWritter('B')">B</button>
+            <button onclick="typeWritter('N')">N</button>
+            <button onclick="typeWritter('M')">M</button>
+            <button onclick="typeWritter(',')">,</button>
+            <button onclick="typeWritter('.')">.</button>
+            <button onclick="typeWritter('/')">/</button>
             <button class="shift">Shift</button>
         </div>
         <div class="row five">
@@ -79,5 +82,13 @@
             <button class="other">Ctrl</button>
         </div>
     </div>
+
+    <script>
+        function typeWritter(value){
+            console.log(value)
+            document.querySelector('.textField').innerHTML = value
+        }
+    </script>
 </body>
+
 </html>
