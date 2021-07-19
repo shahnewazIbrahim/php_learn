@@ -19,5 +19,12 @@
         His password is <?php echo $_POST["password"]; ?>.
     </p>
 
+    <div class="">
+    <?php
+        date_default_timezone_set("Asia/Dhaka");
+        echo "The time is " . date("h:i:sa");
+    ?>
+    </div>
+
 </body>
 </html>
