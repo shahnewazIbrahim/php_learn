@@ -7,22 +7,23 @@
 </head>
 <body>
     <p>
-        This is <?php echo $_POST["name"]; ?> website.
+        Hello, <?php echo $_POST["name"]; ?>.
     </p>
     <p>
-        His email is <?php echo $_POST["email"]; ?>.
+        Your email is <?php echo $_POST["email"]; ?>.
     </p>
     <p>
-        His mobile number is <?php echo $_POST["mobile_no"]; ?>.
+        Your mobile number is <?php echo $_POST["mobile_no"]; ?>.
     </p>
     <p>
-        His password is <?php echo $_POST["password"]; ?>.
+        Your password is <?php echo $_POST["password"]; ?>.
     </p>
 
     <div class="">
     <?php
         date_default_timezone_set("Asia/Dhaka");
         echo "The time is " . date("h:i:sa");
+        echo "Today is " . date("l");
     ?>
     </div>
 
