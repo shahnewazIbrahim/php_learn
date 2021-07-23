@@ -24,6 +24,12 @@
         date_default_timezone_set("Asia/Dhaka");
         echo "The time is " . date("h:i:sa");
         echo "Today is " . date("l");
+        var_dump(checkdate(12,31,-400));
+        
+        echo "<br>";
+        var_dump(checkdate(2,29,2003));
+        echo "<br>";
+        var_dump(checkdate(2,29,2004));
     ?>
     </div>
 
